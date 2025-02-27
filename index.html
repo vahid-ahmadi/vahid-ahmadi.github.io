@@ -6,44 +6,148 @@
     <title>Vahid Ahmadi</title>
     <link rel="stylesheet" href="styles.css">
     <meta name="description" content="Personal website for Vahid Ahmadi">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Vahid Ahmadi</h1>
-        </header>
-        
-        <main>
-            <section class="profile">
-                <div class="profile-image">
-                    <img src="vahid_ahmadi.jpg" alt="Vahid Ahmadi" id="profile-photo">
-                </div>
-                <div class="profile-content">
-                    <h2>Welcome!</h2>
-                    <p>I'm a research associate at <a href="https://policyengine.org" target="_blank">PolicyEngine</a>, using data-driven macroeconomic models to develop public policy analysis tools.</p>
-                    
-                    <p>Previously, I was a pre-doctoral research fellow at the London School of Economics (LSE), working at the <a href="https://www.lse.ac.uk/CFM" target="_blank">Centre for Macroeconomics (CFM)</a>.</p>
-                    
-                    <p>I received my Master's degree in Economics from the <a href="https://www.en.econ.uni-muenchen.de/" target="_blank">Ludwig Maximilians University of Munich</a>, and my Bachelor's in Electrical Engineering from the <a href="https://en.sharif.edu/" target="_blank">Sharif University of Technology</a>.</p>
-                    
-                    <p>I'm interested in macroeconomics, macro-finance, growth, and firm dynamics.</p>
-                </div>
-            </section>
-            
-            <section class="contact">
-                <h2>Contact Information</h2>
-                <p>Email: <a href="mailto:va.vahidahmadi@gmail.com">va.vahidahmadi@gmail.com</a></p>
-            </section>
-        </main>
-        
-        <footer>
-            <div class="social-icons">
-                <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://twitter.com/yourhandle" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="title">
+                <a href="/">Vahid Ahmadi</a>
             </div>
-        </footer>
+            <input type="checkbox" id="nav-trigger" class="nav-trigger">
+            <label for="nav-trigger" class="menu-icon">
+                <span></span>
+            </label>
+            <div class="nav-links">
+                <a href="/">About</a>
+                <a href="#">Publications</a>
+                <a href="#">Projects</a>
+                <a href="#">CV</a>
+                <a href="#contact">Contact</a>
+                <a class="theme-toggle" title="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="profile">
+            <div class="profile-image">
+                <img class="img-fluid z-depth-1 rounded" src="vahid_ahmadi.jpg" alt="Vahid Ahmadi">
+            </div>
+            <div class="profile-content">
+                <h1>Vahid Ahmadi</h1>
+                <h2 class="subtitle">Macroeconomist & Research Associate</h2>
+                
+                <div class="social">
+                    <a href="mailto:va.vahidahmadi@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://linkedin.com/in/yourprofile" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/yourhandle" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/yourusername" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="news">
+            <h2>News</h2>
+            <div class="news-item">
+                <div class="news-date">Feb 2025</div>
+                <div class="news-content">Started new position as Research Associate at PolicyEngine</div>
+            </div>
+            <div class="news-item">
+                <div class="news-date">Dec 2024</div>
+                <div class="news-content">Completed pre-doctoral research fellowship at London School of Economics</div>
+            </div>
+        </div>
+
+        <div class="about">
+            <h2>About Me</h2>
+            <p>I'm a research associate at <a href="https://policyengine.org" target="_blank">PolicyEngine</a>, using data-driven macroeconomic models to develop public policy analysis tools.</p>
+            
+            <p>Previously, I was a pre-doctoral research fellow at the London School of Economics (LSE), working at the <a href="https://www.lse.ac.uk/CFM" target="_blank">Centre for Macroeconomics (CFM)</a>.</p>
+            
+            <p>I received my Master's degree in Economics from the <a href="https://www.en.econ.uni-muenchen.de/" target="_blank">Ludwig Maximilians University of Munich</a>, and my Bachelor's in Electrical Engineering from the <a href="https://en.sharif.edu/" target="_blank">Sharif University of Technology</a>.</p>
+            
+            <p>I'm interested in macroeconomics, macro-finance, growth, and firm dynamics.</p>
+        </div>
+
+        <div class="selected-publications">
+            <h2>Selected Publications</h2>
+            <div class="publication">
+                <div class="publication-title">
+                    <a href="#">The Impact of Macroeconomic Policy on Growth Dynamics</a>
+                </div>
+                <div class="publication-authors">
+                    V. Ahmadi, A. Researcher, B. Scholar
+                </div>
+                <div class="publication-venue">
+                    Journal of Economic Theory, 2024
+                </div>
+                <div class="publication-links">
+                    <a href="#" class="btn-sm">PDF</a>
+                    <a href="#" class="btn-sm">Code</a>
+                    <a href="#" class="btn-sm">BibTeX</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-title">Macroeconomic Policy Simulator</div>
+                    <div class="project-description">An interactive tool for simulating the effects of different macroeconomic policies on economic growth and stability.</div>
+                    <div class="project-links">
+                        <a href="#" class="btn-sm">Demo</a>
+                        <a href="#" class="btn-sm">Code</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">Growth Dynamics Model</div>
+                    <div class="project-description">A computational model for analyzing firm-level growth dynamics and their macroeconomic implications.</div>
+                    <div class="project-links">
+                        <a href="#" class="btn-sm">Paper</a>
+                        <a href="#" class="btn-sm">Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:va.vahidahmadi@gmail.com">va.vahidahmadi@gmail.com</a></p>
+        </div>
     </div>
+
+    <footer class="site-footer">
+        <div class="wrapper">
+            <div class="footer-col-wrapper">
+                <div class="footer-col">
+                    <p>Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme.</p>
+                </div>
+                <div class="footer-col">
+                    <p>© 2025 Vahid Ahmadi</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple dark mode toggle
+        document.querySelector('.theme-toggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark');
+            const icon = this.querySelector('i');
+            if (document.body.classList.contains('dark')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        });
+    </script>
 </body>
 </html>
